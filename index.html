@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب وتمنى للخدمات | شبيك لبيك طلبك بين إيديك</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="منصة اطلب وتمنى للخدمات المتكاملة - خدمات تنظيف وصيانة، خدمات سياحية وحجوزات، شحن ونقل بضائع، تعاملات عقارية، خدمات الدفع الإلكتروني وتسيير المعاملات. شبيك لبيك طلبك بين إيديك.">
+    <!-- Google Fonts: Cairo for Arabic, Outfit for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-contact">
+                <a href="https://wa.me/963998895596" target="_blank" id="top-wa">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.42 9.86-9.86.001-2.636-1.024-5.114-2.887-6.978C16.581 1.904 14.1 1.8 12.011 1.8c-5.44 0-9.863 4.42-9.866 9.862-.001 1.702.461 3.351 1.341 4.8l-1.002 3.662 3.763-.988zM17.522 14.34c-.302-.15-1.786-.88-2.07-.982-.284-.103-.49-.153-.696.152-.207.305-.799.982-.979 1.185-.18.204-.36.23-.663.08-3.033-1.514-4.224-2.628-5.748-5.234-.4-.686.4-.638 1.144-2.124.126-.25.063-.47-.03-.62-.094-.15-.799-1.924-1.096-2.639-.288-.696-.58-.6-.798-.611-.206-.01-.443-.012-.68-.012-.237 0-.623.09-.95.448-.327.359-1.25 1.22-1.25 2.976s1.28 3.447 1.459 3.687c.18.24 2.519 3.847 6.102 5.39 2.569 1.107 3.425.887 4.67.77.838-.078 2.072-.846 2.363-1.66.29-.816.29-1.516.203-1.665-.087-.149-.32-.24-.622-.39z"/></svg>
+                    <span class="ltr-text">0998895596</span>
+                </a>
+                <a href="tel:0951553320" id="top-phone">
+                    <svg viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008-.004-1.974.997-2.064 1.011-2.24 1.086-6.799-7.82-4.509-8.958.058-.028 2.022-1.004 2.022-1.004l-3.52-6.875s-2.027.999-2.086 1.029c-4.796 2.497-2.622 11.639 1.412 19.431 4.141 7.993 12.809 9.6 17.387 7.17.079-.043 2.379-1.009 2.379-1.009z"/></svg>
+                    <span class="ltr-text">0951553320</span>
+                </a>
+            </div>
+            <div class="top-slogan" data-i18n="top-tagline">شبيك لبيك.. طلبك بين إيديك ✨</div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <div class="logo-box">
+                        <span class="logo-main" data-i18n="logo-title">اطلب وتمنى</span>
+                        <span class="logo-sub" data-i18n="logo-subtitle">للخدمات المتكاملة</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Location Selector (Talabat Style) -->
+            <div class="location-selector" id="locationSelectBtn">
+                <div class="loc-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                </div>
+                <div class="loc-details">
+                    <span class="loc-label" data-i18n="deliver-to">التوصيل إلى</span>
+                    <span class="loc-current" id="currentLocationText" data-i18n="damascus">دمشق، سوريا</span>
+                </div>
+                <div class="loc-chevron">
+                    <svg viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.17 9.17 9.171-9.17 2.829 2.83-12 12z"/></svg>
+                </div>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Language Switcher -->
+                <button class="lang-toggle-btn" id="langToggleBtn">
+                    <span class="lang-text">EN</span>
+                </button>
+
+                <!-- Cart / Request Bag Button -->
+                <button class="cart-trigger" id="cartTriggerBtn" aria-label="Open Cart">
+                    <div class="cart-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M16 6v-2c0-2.209-1.791-4-4-4s-4 1.791-4 4v2h-5v18h18v-18h-5zm-6-2c0-1.103.897-2 2-2s2 .897 2 2v2h-4v-2zm8 18h-14v-14h14v14z"/></svg>
+                        <span class="cart-badge" id="cartBadgeCount">0</span>
+                    </div>
+                    <span class="cart-label" data-i18n="my-requests">طلباتي</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Banner Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero-main-title">طلبك مجاب في لحظات!</h1>
+                <p class="hero-subtitle" data-i18n="hero-sub">كل ما تحتاجه من خدمات تنظيف، صيانة، شحن، تعاملات عقارية، وخدمات سياحية في مكان واحد وبلمسة زر.</p>
+                
+                <!-- Search Bar (Talabat Style) -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-icon">
+                            <svg viewBox="0 0 24 24"><path d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.247-4.267-9.516-9.517-9.516s-9.517 4.269-9.517 9.516 4.267 9.517 9.517 9.517c1.86 0 3.595-.538 5.06-1.468l6.353 6.354c.407.408 1.068.408 1.475 0l1.115-1.115c.408-.407.408-1.068 0-1.475zm-16.357-6.41c-2.906 0-5.27-2.365-5.27-5.27s2.364-5.27 5.27-5.27 5.27 2.365 5.27 5.27-2.363 5.27-5.27 5.27z"/></svg>
+                        </div>
+                        <input type="text" id="serviceSearchInput" placeholder="ابحث عن الخدمة التي تريدها... (مثال: تنظيف، شحن، عقارات)" data-i18n-placeholder="search-placeholder">
+                        <button class="search-btn" id="searchBtn" data-i18n="search">بحث</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-banner-image">
+                <img src="assets/post.png" alt="اطلب وتمنى للخدمات" class="main-banner-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Categories Section (Talabat Grid Icons) -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="categories-title">تصفح الخدمات حسب التصنيف</h2>
+                <p class="section-desc" data-i18n="categories-desc">اختر أحد الأقسام التالية لاستعراض الخدمات المتوفرة وطلبها مباشرة</p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Category Item 1 -->
+                <div class="category-card active" data-category="all" id="cat-all">
+                    <div class="cat-icon-box cat-all-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 11h6v-6h-6v6zm10-6v6h6v-6h-6zm-10 14h6v-6h-6v6zm10 0h6v-6h-6v6z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-all">كل الخدمات</span>
+                </div>
+                
+                <!-- Category Item 2 -->
+                <div class="category-card" data-category="home" id="cat-home">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M21 9.996l-9-7.996-9 7.996v11.004h6v-7h6v7h6z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-home">خدمات المنازل</span>
+                </div>
+
+                <!-- Category Item 3 -->
+                <div class="category-card" data-category="documents" id="cat-documents">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M11.362 2c-.669 0-1.28.328-1.644.88l-5.551 8.402c-.366.555-.366 1.285 0 1.84l5.551 8.402c.364.552.975.88 1.644.88h7.276c1.077 0 1.949-.88 1.949-1.95v-16.51c0-1.07-.872-1.95-1.949-1.95h-7.276zm-5.068 11.238c-.365-.555-.365-1.285 0-1.84l5.551-8.402c.364-.552.975-.88 1.644-.88h1.22l-5.32 8.402c-.366.555-.366 1.285 0 1.84l5.32 8.402h-1.22c-.669 0-1.28-.328-1.644-.88l-5.551-8.402z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-documents">أوراق ووثائق</span>
+                </div>
+
+                <!-- Category Item 4 -->
+                <div class="category-card" data-category="electronic" id="cat-electronic">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-electronic">خدمات إلكترونية</span>
+                </div>
+
+                <!-- Category Item 5 -->
+                <div class="category-card" data-category="realestate" id="cat-realestate">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M19 2v20h-14v-20h14zm2-2h-18v24h18v-24zm-9 3h-3v2h3v-2zm0 4h-3v2h3v-2zm0 4h-3v2h3v-2zm5-8h-3v2h3v-2zm0 4h-3v2h3v-2zm0 4h-3v2h3v-2z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-realestate">خدمات عقارية</span>
+                </div>
+
+                <!-- Category Item 6 -->
+                <div class="category-card" data-category="tourism" id="cat-tourism">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5v-5.5c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5v5.5l-8 5v2l8-2.5v5.5l-2 1.5v1.5l3.5-1 3.5 1v-1.5l-2-1.5v-5.5l8 2.5z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-tourism">خدمات سياحية</span>
+                </div>
+
+                <!-- Category Item 7 -->
+                <div class="category-card" data-category="transport" id="cat-transport">
+                    <div class="cat-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M24 10h-3v-5h-10v5h-11v8h2c0 1.657 1.343 3 3 3s3-1.343 3-3h8c0 1.657 1.343 3 3 3s3-1.343 3-3h2v-8zm-19 9c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1zm14 0c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1zm3-7h-3v-5h3v5z"/></svg>
+                    </div>
+                    <span class="cat-name" data-i18n="cat-transport">خدمات النقل</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Cards Grid -->
+    <section class="services-list-section">
+        <div class="container">
+            <div class="services-header-dynamic">
+                <h3 class="current-category-title" id="currentCategoryTitle" data-i18n="all-services">كل الخدمات</h3>
+                <span class="services-count" id="servicesCountBadge">18 خدمة متوفرة</span>
+            </div>
+            
+            <div class="services-grid" id="servicesGridContainer">
+                <!-- Services cards are dynamically injected here by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Cart Slide-Out Drawer (Talabat Style) -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="drawer-header">
+            <h3 data-i18n="selected-requests">الخدمات المختارة</h3>
+            <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close Cart">
+                <svg viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            </button>
+        </div>
+        
+        <!-- Cart Items Container -->
+        <div class="drawer-body">
+            <div class="empty-cart-state" id="emptyCartState">
+                <div class="empty-cart-icon">
+                    <svg viewBox="0 0 24 24"><path d="M16 6v-2c0-2.209-1.791-4-4-4s-4 1.791-4 4v2h-5v18h18v-18h-5zm-6-2c0-1.103.897-2 2-2s2 .897 2 2v2h-4v-2zm8 18h-14v-14h14v14z"/></svg>
+                </div>
+                <p class="empty-cart-text" data-i18n="empty-cart">لم تقم باختيار أي خدمات بعد. تصفح قائمتنا واختر ما تريد!</p>
+            </div>
+            
+            <div class="cart-items-list" id="cartItemsList" style="display: none;">
+                <!-- Cart items injected here -->
+            </div>
+        </div>
+        
+        <!-- Drawer Footer -->
+        <div class="drawer-footer" id="drawerFooter" style="display: none;">
+            <div class="cart-summary-row">
+                <span class="summary-label" data-i18n="total-services">إجمالي الخدمات:</span>
+                <span class="summary-value" id="cartTotalCount">0 خدمات</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" data-i18n="confirm-order">تأكيد طلب الخدمات</button>
+        </div>
+    </div>
+
+    <!-- Location Selector Modal -->
+    <div class="modal-overlay" id="locationModalOverlay"></div>
+    <div class="modal location-modal" id="locationModal">
+        <div class="modal-header">
+            <h3 data-i18n="select-region-title">تحديد منطقة التوصيل</h3>
+            <button class="close-modal-btn" id="closeLocModalBtn">
+                <svg viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p class="modal-instruction" data-i18n="select-region-desc">يرجى تحديد المحافظة التي ترغب بتلقي الخدمة فيها لضمان سرعة التنفيذ:</p>
+            <div class="regions-list-grid" id="regionsGrid">
+                <!-- Injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Form Modal -->
+    <div class="modal-overlay" id="checkoutModalOverlay"></div>
+    <div class="modal checkout-modal" id="checkoutModal">
+        <div class="modal-header">
+            <h3 data-i18n="checkout-details-title">تفاصيل الاتصال والتأكيد</h3>
+            <button class="close-modal-btn" id="closeCheckoutModalBtn">
+                <svg viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form id="checkoutForm" class="checkout-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="custName" data-i18n="lbl-name">الاسم الكامل *</label>
+                    <input type="text" id="custName" required placeholder="الاسم والكنية" data-i18n-placeholder="ph-name">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="custPhone" data-i18n="lbl-phone">رقم الموبايل *</label>
+                        <input type="tel" id="custPhone" required placeholder="09xxxxxxxx" class="ltr-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="custWA" data-i18n="lbl-wa">رقم الواتساب *</label>
+                        <input type="tel" id="custWA" required placeholder="09xxxxxxxx" class="ltr-input">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="custAddress" data-i18n="lbl-address">العنوان بالتفصيل *</label>
+                    <textarea id="custAddress" required placeholder="المنطقة، الشارع، البناء، الطابق، رقم الشقة أو علامات مميزة" data-i18n-placeholder="ph-address"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label data-i18n="lbl-contact-pref">طريقة التواصل المفضلة</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="contactPref" value="WhatsApp" checked>
+                            <span data-i18n="pref-wa">محادثة واتساب</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="contactPref" value="Call">
+                            <span data-i18n="pref-call">اتصال هاتفي مباشر</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="order-summary-box">
+                    <h4 data-i18n="order-summary">ملخص الطلب</h4>
+                    <ul class="order-summary-list" id="orderSummaryList">
+                        <!-- Injected -->
+                    </ul>
+                </div>
+                
+                <button type="submit" class="submit-order-btn" id="submitOrderBtn">
+                    <svg viewBox="0 0 24 24" class="wa-btn-icon"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.42 9.86-9.86.001-2.636-1.024-5.114-2.887-6.978C16.581 1.904 14.1 1.8 12.011 1.8c-5.44 0-9.863 4.42-9.866 9.862-.001 1.702.461 3.351 1.341 4.8l-1.002 3.662 3.763-.988zM17.522 14.34c-.302-.15-1.786-.88-2.07-.982-.284-.103-.49-.153-.696.152-.207.305-.799.982-.979 1.185-.18.204-.36.23-.663.08-3.033-1.514-4.224-2.628-5.748-5.234-.4-.686.4-.638 1.144-2.124.126-.25.063-.47-.03-.62-.094-.15-.799-1.924-1.096-2.639-.288-.696-.58-.6-.798-.611-.206-.01-.443-.012-.68-.012-.237 0-.623.09-.95.448-.327.359-1.25 1.22-1.25 2.976s1.28 3.447 1.459 3.687c.18.24 2.519 3.847 6.102 5.39 2.569 1.107 3.425.887 4.67.77.838-.078 2.072-.846 2.363-1.66.29-.816.29-1.516.203-1.665-.087-.149-.32-.24-.622-.39z"/></svg>
+                    <span data-i18n="send-wa-btn">إرسال الطلب عبر واتساب للتأكيد</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dynamic Reviews & Testimonials Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="reviews-title">ماذا يقول عملاؤنا؟</h2>
+                <p class="section-desc" data-i18n="reviews-desc">آراء حقيقية من عملائنا الذين جربوا خدماتنا المتميزة وسرعة تلبية رغباتهم</p>
+            </div>
+            
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Dynamic or static high-quality reviews -->
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <div class="avatar-placeholder">أ س</div>
+                        <div class="user-info">
+                            <span class="user-name">أحمد سليمان</span>
+                            <span class="user-location" data-i18n="damascus">دمشق</span>
+                        </div>
+                        <div class="stars-row">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"سرعة استجابة مذهلة في خدمات التنظيف والصيانة. العمال كانوا محترفين للغاية والنتيجة ممتازة. فخور بوجود مثل هذه الخدمة في سوريا."</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <div class="avatar-placeholder">م خ</div>
+                        <div class="user-info">
+                            <span class="user-name">منى الخالد</span>
+                            <span class="user-location" data-i18n="aleppo">حلب</span>
+                        </div>
+                        <div class="stars-row">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"ساعدوني جداً في تسيير معاملة تصديق أوراق السفر والترجمة. وفروا عليّ السفر والانتظار الطويل. خدمة تستحق 5 نجوم بالفعل!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-user-row">
+                        <div class="avatar-placeholder">ر م</div>
+                        <div class="user-info">
+                            <span class="user-name">رامي محمود</span>
+                            <span class="user-location" data-i18n="tartous">طرطوس</span>
+                        </div>
+                        <div class="stars-row">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"نقلت أثاث منزلي معهم وكانوا حريصين جداً على كل قطعة ولم يتضرر أي شيء. السعر كان مناسباً وواضحاً من البداية. شكراً جزيلاً."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="faq-title">الأسئلة الشائعة</h2>
+                <p class="section-desc" data-i18n="faq-desc">إجابات على الأسئلة التي قد تتبادر إلى ذهنك حول خدماتنا وطريقة الطلب</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq-q1">كيف يمكنني تقديم طلب خدمة؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-a1">ببساطة تصفح موقعنا واختر الخدمات التي تحتاجها واضغط على "إضافة للطلب"، ثم افتح سلة طلباتك واضغط "تأكيد". املأ بياناتك وسينقلك الموقع مباشرة إلى الواتساب الخاص بنا لإرسال الطلب المنسق وجدولة موعد فوراً.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq-q2">ما هي المناطق التي تغطيها خدماتكم؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-a2">نحن نغطي معظم المحافظات السورية الرئيسية مثل دمشق وريفها، حلب، حمص، حماة، اللاذقية، وطرطوس. يمكنك تحديد موقعك من أعلى الصفحة لرؤية الخدمات المتاحة لمنطقتك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq-q3">هل هناك أي رسوم خفية؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-a3">كلا، نحن نؤمن بالشفافية الكاملة. عند إرسال طلبك، يقوم فريق خدمة العملاء بمراجعة تفاصيل طلبك وتزويدك بعرض سعر مفصل ودقيق قبل البدء بأي عمل.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq-q4">كم من الوقت يستغرق البدء في تنفيذ الخدمة؟</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-a4">العديد من خدماتنا مثل خدمات الشحن السريع أو الاستشارات السياحية والدفع الإلكتروني تتم خلال نفس اليوم. بالنسبة للخدمات الكبيرة مثل التنظيف الشامل أو الصيانة، يتم تحديد الموعد بالتنسيق معك مباشرة بعد تأكيد الطلب، وغالباً ما يكون خلال 24 إلى 48 ساعة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h3 class="footer-brand" data-i18n="logo-title">اطلب وتمنى</h3>
+                <p class="footer-tagline" data-i18n="top-tagline">شبيك لبيك.. طلبك بين إيديك ✨</p>
+                <p class="footer-about-text" data-i18n="footer-desc">نحن بوابتك المتكاملة للحصول على شتى أنواع الخدمات المنزلية، العقارية، السياحية، واللوجستية في سوريا بأعلى جودة وأسرع وقت.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-title" data-i18n="quick-links">روابط سريعة</h4>
+                <ul>
+                    <li><a href="#" data-category="all" class="footer-cat-link" data-i18n="cat-all">كل الخدمات</a></li>
+                    <li><a href="#" data-category="home" class="footer-cat-link" data-i18n="cat-home">خدمات المنازل</a></li>
+                    <li><a href="#" data-category="electronic" class="footer-cat-link" data-i18n="cat-electronic">خدمات إلكترونية</a></li>
+                    <li><a href="#" data-category="tourism" class="footer-cat-link" data-i18n="cat-tourism">خدمات سياحية</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-title" data-i18n="contact-us">اتصل بنا</h4>
+                <ul class="contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                        <span data-i18n="address-details">سوريا، دمشق، المزة</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008-.004-1.974.997-2.064 1.011-2.24 1.086-6.799-7.82-4.509-8.958.058-.028 2.022-1.004 2.022-1.004l-3.52-6.875s-2.027.999-2.086 1.029c-4.796 2.497-2.622 11.639 1.412 19.431 4.141 7.993 12.809 9.6 17.387 7.17.079-.043 2.379-1.009 2.379-1.009z"/></svg>
+                        <span class="ltr-text">0951553320 / 031 4721888</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.42 9.86-9.86.001-2.636-1.024-5.114-2.887-6.978C16.581 1.904 14.1 1.8 12.011 1.8c-5.44 0-9.863 4.42-9.866 9.862-.001 1.702.461 3.351 1.341 4.8l-1.002 3.662 3.763-.988zM17.522 14.34c-.302-.15-1.786-.88-2.07-.982-.284-.103-.49-.153-.696.152-.207.305-.799.982-.979 1.185-.18.204-.36.23-.663.08-3.033-1.514-4.224-2.628-5.748-5.234-.4-.686.4-.638 1.144-2.124.126-.25.063-.47-.03-.62-.094-.15-.799-1.924-1.096-2.639-.288-.696-.58-.6-.798-.611-.206-.01-.443-.012-.68-.012-.237 0-.623.09-.95.448-.327.359-1.25 1.22-1.25 2.976s1.28 3.447 1.459 3.687c.18.24 2.519 3.847 6.102 5.39 2.569 1.107 3.425.887 4.67.77.838-.078 2.072-.846 2.363-1.66.29-.816.29-1.516.203-1.665-.087-.149-.32-.24-.622-.39z"/></svg>
+                        <span class="ltr-text">0998895596 (واتساب)</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c-.183 4.273-3.055 7.41-7.024 7.41-1.678 0-2.997-.508-4.042-1.49 1.482.162 3.003-.263 4.015-1.194-1.382-.029-2.327-.92-2.709-2.126.43.082.831.063 1.206-.042-1.442-.294-2.385-1.51-2.355-3.036.424.237.904.379 1.411.396-1.353-.902-1.787-2.793-1.077-4.205 1.558 1.91 3.843 3.12 6.376 3.25-.615-2.65 1.401-4.633 3.626-3.87 1.037.355 1.705 1.341 1.83 2.428.823-.162 1.597-.463 2.302-.879-.27.844-.84 1.5-1.611 1.962.732-.087 1.428-.282 2.08-.57-.492.737-1.11 1.378-1.838 1.879z"/></svg>
+                        <span class="ltr-text">Utlob.wa.tamannah@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 اطلب وتمنى للخدمات المتكاملة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
