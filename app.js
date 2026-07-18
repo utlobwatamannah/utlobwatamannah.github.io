@@ -258,7 +258,7 @@ const regionsList = [
     { id: "damascus", nameAr: "دمشق", nameEn: "Damascus" },
     { id: "rif-damascus", nameAr: "ريف دمشق", nameEn: "Rif Dimashq" },
     { id: "aleppo", nameAr: "حلب", nameEn: "Aleppo" },
-    { id: "homs", nameAr: "حمص", nameEn: "Homs" },
+    { id: "homs", nameAr: "حمص تلكلخ", nameEn: "Homs Talkalakh" },
     { id: "hama", nameAr: "حماة", nameEn: "Hama" },
     { id: "latakia", nameAr: "اللاذقية", nameEn: "Latakia" },
     { id: "tartus", nameAr: "طرطوس", nameEn: "Tartus" },
@@ -293,6 +293,7 @@ const translations = {
     
     // Regions
     "damascus": { ar: "دمشق، سوريا", en: "Damascus, Syria" },
+    "homs": { ar: "حمص تلكلخ، سوريا", en: "Homs Talkalakh, Syria" },
     "aleppo": { ar: "حلب", en: "Aleppo" },
     "tartous": { ar: "طرطوس", en: "Tartus" },
 
@@ -419,7 +420,7 @@ const translations = {
     // Footer
     "quick-links": { ar: "روابط سريعة", en: "Quick Links" },
     "contact-us": { ar: "اتصل بنا", en: "Contact Us" },
-    "address-details": { ar: "سوريا، دمشق، المزة", en: "Mezzeh, Damascus, Syria" },
+    "address-details": { ar: "سوريا، حمص، تلكلخ", en: "Talkalakh, Homs, Syria" },
     "footer-desc": {
         ar: "نحن بوابتك المتكاملة للحصول على شتى أنواع الخدمات المنزلية، العقارية، السياحية، واللوجستية في سوريا بأعلى جودة وأسرع وقت.",
         en: "We are your comprehensive gateway to house, real estate, tourism, and logistics services in Syria with the highest quality and fastest turnaround."
@@ -431,9 +432,9 @@ const state = {
     lang: "ar", // "ar" or "en"
     currentCategory: "all",
     searchQuery: "",
-    selectedRegionId: "damascus",
-    selectedRegionNameAr: "دمشق",
-    selectedRegionNameEn: "Damascus",
+    selectedRegionId: "homs",
+    selectedRegionNameAr: "حمص تلكلخ",
+    selectedRegionNameEn: "Homs Talkalakh",
     cart: [] // Array of { serviceId: '...', notes: '...' }
 };
 
