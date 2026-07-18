@@ -290,6 +290,10 @@ const translations = {
         ar: "طلباتي",
         en: "My Requests"
     },
+    "hotline-text": {
+        ar: "9897 (رقم سريع)",
+        en: "9897 (Hotline)"
+    },
     
     // Regions
     "damascus": { ar: "دمشق، سوريا", en: "Damascus, Syria" },

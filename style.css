@@ -1462,6 +1462,14 @@ body.ltr .footer-title::after {
     font-size: 13px;
 }
 
+.contact-list a {
+    transition: color var(--transition-fast);
+}
+
+.contact-list a:hover {
+    color: var(--primary-yellow);
+}
+
 .contact-list svg {
     width: 16px;
     height: 16px;
